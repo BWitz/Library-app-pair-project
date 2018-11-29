@@ -1,0 +1,4 @@
+<%= render "forms" %>
+<%= form_tag author_path(@author), method: "delete" do %>
+  <%= submit_tag "Delete #{@author.name}" %>
+<% end %>

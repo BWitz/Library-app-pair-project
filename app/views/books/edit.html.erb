@@ -1,0 +1,4 @@
+<%= render "forms" %>
+<%= form_tag book_path(@book), method: "delete" do %>
+  <%= submit_tag "Delete #{@book.name}" %>
+<% end %>
